@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gDd-dC-3e2">
+                                <rect key="frame" x="270" y="285" width="60" height="30"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal" title="添加数据">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addBtnClicked:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Rt7-1F-bZk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Scy-Dp-KAV">
+                                <rect key="frame" x="270" y="438" width="60" height="30"/>
+                                <state key="normal" title="查询数据">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="queryBtnClicked:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="4NR-3o-vzM"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0dA-BA-JFo">
+                                <rect key="frame" x="146" y="76" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0dA-BA-JFo" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="146" id="32V-mF-Cqh"/>
+                            <constraint firstAttribute="centerX" secondItem="gDd-dC-3e2" secondAttribute="centerX" id="8oG-RN-O3Z"/>
+                            <constraint firstItem="0dA-BA-JFo" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="56" id="9Vs-aw-eGY"/>
+                            <constraint firstAttribute="trailing" secondItem="0dA-BA-JFo" secondAttribute="trailing" constant="214" id="b6o-gk-xxE"/>
+                            <constraint firstAttribute="centerY" secondItem="gDd-dC-3e2" secondAttribute="centerY" id="cBC-Zo-aKs"/>
+                            <constraint firstItem="Scy-Dp-KAV" firstAttribute="top" secondItem="gDd-dC-3e2" secondAttribute="bottom" constant="123" id="cMb-tD-YYE"/>
+                            <constraint firstItem="gDd-dC-3e2" firstAttribute="top" secondItem="0dA-BA-JFo" secondAttribute="bottom" constant="81" id="d2v-JE-2Ye"/>
+                            <constraint firstAttribute="centerX" secondItem="Scy-Dp-KAV" secondAttribute="centerX" id="x0N-Am-Txy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dataTextView" destination="0dA-BA-JFo" id="NN6-L4-8Du"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
